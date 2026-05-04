@@ -1,16 +1,51 @@
-# GitHub PR Practice Repo
+# 과제 GitHub 제출 가이드
 
-This repository is prepared for pull request mentoring sessions.
+1. [폴더 구조](#1-폴더-구조-필수)
+2. [방법 A: Collaborator로 PR 보내기](#2-방법-a-collaborator로-pr-보내기)
+3. [방법 B: Contributor로 Fork 후 PR 보내기](#3-방법-b-contributor로-fork-후-pr-보내기)
+4. [PR 제목 규칙](#4-pr-제목-규칙)
 
-## Quick start
+---
 
-1. Create a feature branch from `main`.
-2. Pick one task from `PRACTICE_TASKS.md`.
-3. Make code and test changes.
-4. Open a pull request and request a review.
+## 1. 폴더 구조 (필수)
 
-## Run tests
+레포지토리 최상단의 **과제 제출 폴더** 안에 **본인 이름 폴더**를 생성해 파일을 관리합니다.
 
-```bash
-npm test
+```text
+repo-root/
+ └─ 과제 제출/
+     ├─ 홍길동/
+     │   └─ Test.py
+     └─ 허광민/
 ```
+
+---
+
+## 2. 방법 A: Collaborator로 PR 보내기
+
+| 단계 | 내용 |
+|------|------|
+| **1. 권한 확인** | 원본 레포지토리에 Collaborator 권한이 있는지 확인합니다. |
+| **2. Clone** | 원본 레포지토리를 로컬에 Clone합니다. |
+| **3. 브랜치 생성** | `dev/본인이름` 브랜치를 생성합니다. (예: `dev/허광민`) |
+| **4. Commit & Push** | 과제 제출 파일을 폴더 구조에 맞춰 추가한 뒤, `dev/본인이름` 브랜치로 Push합니다. |
+| **5. PR 생성** | 원본 레포지토리에서 `dev/본인이름` → `main`으로 PR을 생성합니다. |
+
+---
+
+## 3. 방법 B: Contributor로 Fork 후 PR 보내기
+
+| 단계 | 내용 |
+|------|------|
+| **1. Fork** | 원본 레포지토리를 본인 계정으로 Fork합니다. |
+| **2. Clone** | Fork한 레포지토리를 로컬에 Clone합니다. |
+| **3. 브랜치 생성** | Fork 저장소에서 작업 브랜치를 생성합니다. (예: `dev/허광민`) |
+| **4. Commit & Push** | 과제 제출 파일을 폴더 구조에 맞춰 추가한 뒤, 본인 원격(Fork) 브랜치로 Push합니다. |
+| **5. PR 생성** | 본인 Fork 저장소의 `dev/본인이름` 브랜치에서 원본 저장소 `main`으로 PR을 생성합니다. |
+
+---
+
+## 4. PR 제목 규칙
+
+- 형식: `이름 과제 제출`
+- 예시: `허광민 과제 제출`

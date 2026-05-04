@@ -1,20 +1,23 @@
-## Why
+## PR 제목 형식
 
-Explain why this change is needed.
+`이름 과제 제출`
 
-## What Changed
+예시: `허광민 과제 제출`
 
-- [ ] Code changes
-- [ ] Tests added or updated
-- [ ] Docs updated (if needed)
+## 제출자 정보
 
-## Test Plan
+- 이름:
+- 주차: Week
+- 제출 방식: (Collaborator / Contributor(Fork))
 
-- [ ] `npm test`
-- [ ] Manual check (if applicable)
+## 제출 파일
 
-## Checklist
+- 제출 경로: `과제 제출/이름/`
+- 포함 파일: (예: 사진1.png, 사진2.png)
 
-- [ ] Small and reviewable scope
-- [ ] Clear commit messages
-- [ ] No unrelated changes
+## 체크리스트
+
+- [ ] 폴더 구조를 `과제 제출/이름/` 형식으로 맞췄습니다.
+- [ ] 과제 파일만 포함했고, 불필요한 파일은 제외했습니다.
+- [ ] PR 제목을 `이름 과제 제출` 형식으로 작성했습니다.
+- [ ] 제출 방식에 맞게 브랜치/PR 대상을 확인했습니다.
