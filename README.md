@@ -1,9 +1,10 @@
 # 과제 GitHub 제출 가이드
 
 1. [폴더 구조](#1-폴더-구조-필수)
-2. [방법 A: Collaborator로 PR 보내기](#2-방법-a-collaborator로-pr-보내기)
-3. [방법 B: Contributor로 Fork 후 PR 보내기](#3-방법-b-contributor로-fork-후-pr-보내기)
-4. [PR 제목 규칙](#4-pr-제목-규칙)
+2. [공통 제출 절차](#2-공통-제출-절차)
+3. [방법 A: Collaborator로 PR 보내기](#3-방법-a-collaborator로-pr-보내기)
+4. [방법 B: Contributor로 Fork 후 PR 보내기](#4-방법-b-contributor로-fork-후-pr-보내기)
+5. [PR 제목 규칙](#5-pr-제목-규칙)
 
 ---
 
@@ -21,7 +22,23 @@ repo-root/
 
 ---
 
-## 2. 방법 A: Collaborator로 PR 보내기
+## 2. 공통 제출 절차
+
+1. `과제 제출/본인이름/` 폴더를 만들고, 아래 파일 2개를 **복사**해서 가져옵니다.
+   - `src/star.py` -> `본인학번_star.py`로 이름 변경
+   - `.github/PULL_REQUEST_TEMPLATE.md` -> `본인학번.md`로 이름 변경
+2. 이름을 변경한 `본인학번.md` 파일의 공백 부분(또는 내용)을 본인 제출 양식에 맞게 수정합니다.
+3. GitHub Desktop에서 위 2개 파일을 커밋하고, 커밋 메시지는 `이름 과제 제출` 형식으로 작성합니다.
+   - 예시: `허광민 과제 제출`
+4. Push 후 GitHub에서 Pull Request를 생성합니다.
+   - Collaborator: `dev/본인이름` -> 원본 저장소 `main`
+   - Contributor(Fork): 본인 Fork 브랜치 -> 원본 저장소 `main`
+5. PR 작성 시 `본인학번.md` 내용을 PR 본문에 복사/붙여넣기하고, `.github/PULL_REQUEST_TEMPLATE.md` 체크리스트를 기준으로 누락이 없는지 확인합니다.
+6. 최종 확인 후 PR을 제출합니다.
+
+---
+
+## 3. 방법 A: Collaborator로 PR 보내기
 
 | 단계 | 내용 |
 |------|------|
@@ -33,7 +50,7 @@ repo-root/
 
 ---
 
-## 3. 방법 B: Contributor로 Fork 후 PR 보내기
+## 4. 방법 B: Contributor로 Fork 후 PR 보내기
 
 | 단계 | 내용 |
 |------|------|
@@ -45,7 +62,7 @@ repo-root/
 
 ---
 
-## 4. PR 제목 규칙
+## 5. PR 제목 규칙
 
 - 형식: `이름 과제 제출`
 - 예시: `허광민 과제 제출`
